@@ -1,1 +1,1 @@
-Alx Curricullum for higher level programming
+Alx curriculum for higher level programming
