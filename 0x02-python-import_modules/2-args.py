@@ -11,5 +11,6 @@ def main():
         print("{:d}: {}".format(i, arg))
         i += 1
 
+
 if __name__ == "__main__":
     main()
