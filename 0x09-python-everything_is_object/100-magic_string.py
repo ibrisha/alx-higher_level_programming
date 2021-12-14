@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-globvar = 0
 def magic_string():
-    global globvar++
-    return ("BestSchool" * globvar)
+    magic_string.ntimes = getattr(magic_string, 'ntimes', 0) + 1
+    return ("BestSchool, " * (magic_string.ntimes - 1) + "BestSchool")
