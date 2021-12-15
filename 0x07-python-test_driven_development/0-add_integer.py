@@ -4,7 +4,7 @@ module with 1 function, add integers
 """
 
 
-def add_integer(a, b):
+def add_integer(a, b=98):
     """returns a + b"""
     if isinstance(a, (int, float)) and isinstance(b, (int, float)):
         return int(a) + int(b)
