@@ -110,14 +110,14 @@ TypeError print_sorted when method is given 1 argument
     >>> my_list.append("Morketa")
     >>> my_list.append("Jhon")
     >>> my_list.append("Desta")
-    >>> my_list.append("Mr Tolosa")
+    >>> my_list.append("Tolosa")
     >>> print(my_list)
-    ['Elsa', 'Morketa', 'Jhon', 'Desta', 'Mr Tolosa']
+    ['Elsa', 'Morketa', 'Jhon', 'Desta', 'Tolosa']
 
 ::
 
     >>> my_list.print_sorted()
-    ['Desta', 'Elsa', 'Jhon', 'Morketa','Mr Tolosa']
+    ['Desta', 'Elsa', 'Jhon', 'Morketa','Tolosa']
 
 ::
 
