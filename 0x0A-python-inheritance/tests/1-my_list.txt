@@ -122,3 +122,17 @@ The order of the original list is not altered after a call to the method.
 
     >>> print(my_list)
     [1, 4, 2, 3, 5]
+List with ranges
+
+::
+    >>> my_list = list(range(20, 0, -1))
+    print(my_list)
+    [20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+sorted list
+::
+   >>> MyList.print_sorted(my_list)
+   [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+unaltered after sort
+::
+   >>> print(my_list)
+   [20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
