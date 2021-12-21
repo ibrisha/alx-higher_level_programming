@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Defines a file-appending function."""
+
+
 def append_write(filename="", text=""):
     """appends text to input file"""
     chars_written = 0
