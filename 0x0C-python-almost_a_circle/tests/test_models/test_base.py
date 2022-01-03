@@ -19,7 +19,7 @@ class Testbase_instances(unittest.TestCase):
     def test_empty(self):
         base1 = Base()
         base2 = Base()
-        self.assertEqual(base1.id, base2.id -1)
+        self.assertEqual(base1.id, base2.id - 1)
 
     def test_single_id(self):
         self.assertEqual(5, Base(5).id)
@@ -68,7 +68,6 @@ class Testbase_instances(unittest.TestCase):
 class Testbase_to_json(unittest.TestCase):
     """Type class of testing for to_json"""
 
-
     def test_to_json_none(self):
         self.assertEqual('[]', Base.to_json_string(None))
 
@@ -111,9 +110,9 @@ class Testbase_to_json(unittest.TestCase):
         list_dicts = [sqr1.to_dictionary(), sqr2.to_dictionary()]
         self.assertTrue(len(Base.to_json_string(list_dicts)))
 
+
 class Testbase_from_json(unittest.TestCase):
     """Type class unittest from json method"""
-
 
     def test_from_json_none(self):
         self.assertEqual([], Base.from_json_string(None))
@@ -149,16 +148,14 @@ class Testbase_from_json(unittest.TestCase):
 
     def test_from_json_dictRx2(self):
         linput = [{"id": 89, "width": 10, "height": 4, "x": 2, "y": 1},
-                  {"id": 7, "width": 1, "height": 7, "x": 8, "y": 2}
-        ]
+                  {"id": 7, "width": 1, "height": 7, "x": 8, "y": 2}]
         json_linput = Rectangle.to_json_string(linput)
         loutput = Rectangle.from_json_string(json_linput)
         self.assertEqual(linput, loutput)
 
     def test_from_json_dictSx2(self):
         linput = [{"id": 89, "width": 10, "height": 4, "x": 2, "y": 1},
-                  {"id": 7, "width": 1, "height": 7, "x": 8, "y": 2}
-        ]
+                  {"id": 7, "width": 1, "height": 7, "x": 8, "y": 2}]
         json_linput = Square.to_json_string(linput)
         loutput = Square.from_json_string(json_linput)
         self.assertEqual(linput, loutput)
@@ -354,6 +351,7 @@ class Testbase_create(unittest.TestCase):
         s1_dictionary = s1.to_dictionary()
         s2 = Square.create(**s1_dictionary)
         self.assertIsNot(s1, s2)
+
 
 if __name__ == '__main__':
     unittest.main()
