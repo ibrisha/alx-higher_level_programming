@@ -40,7 +40,8 @@ class Testbase_instances(unittest.TestCase):
         self.assertEqual(3.1, Base(3.1).id)
 
     def test_dict(self):
-        self.assertEqual({"val1": 1, "val2": 2}, Base({"val1": 1, "val2": 2}).id)
+        self.assertEqual({"val1": 1, "val2": 2},
+                         Base({"val1": 1, "val2": 2}).id)
 
     def test_list(self):
         self.assertEqual([1, 2, 3], Base([1, 2, 3]).id)
@@ -62,7 +63,8 @@ class Testbase_instances(unittest.TestCase):
         self.assertEqual({1, 2, 3}, Base({1, 2, 3}).id)
 
     def test_frozen(self):
-        self.assertEqual(frozenset({"a", "b", "c"}), Base(frozenset({"a", "b", "c"})).id)
+        self.assertEqual(frozenset({"a", "b", "c"}),
+                         Base(frozenset({"a", "b", "c"})).id)
 
 
 class Testbase_to_json(unittest.TestCase):
